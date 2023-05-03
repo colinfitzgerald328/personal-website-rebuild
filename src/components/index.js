@@ -1,6 +1,7 @@
 import React from "react";
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownwardRounded';
 import ArrowUpwardRoundedIcon from '@mui/icons-material/ArrowUpwardRounded';
+import TopItems from "./topItems";
 import styles from "./styles.module.css";
 
 export default class Root extends React.Component {
@@ -27,8 +28,6 @@ export default class Root extends React.Component {
     }
 
     
-    
-
     render() {
         const images = [
             'https://images.unsplash.com/photo-1668495238352-cdff39bc763f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60',
@@ -41,36 +40,21 @@ export default class Root extends React.Component {
         return (
             <div className={styles.main}>
                 <div className={styles.mainBackground}>
-                    <div className={styles.itemsHolder}>
-                        <div className={styles.leftItems}>
-                            <div className={styles.item}>
-                                Colin FitzGerald
-                            </div>
-                            <div className={styles.item}>
-                                Currently data engineer at RoBhat Labs 
-                            </div>
-                            <div className={styles.item}>
-                                Based in Berkeley, California
-                            </div>
-                        </div>
-                        <div className={styles.lastItem}>
-                            Work, About, Contact 
-                        </div>
-                    </div>
+                    <TopItems/>
                     <div className={styles.leftAndRightContainer}>
                         <div className={styles.leftItemsHolder}>
                             <div className={styles.roleArrowContainer}>
-                            <div className={styles.role}>
-                                [Web Developer]
+                                <div className={styles.role}>
+                                    [Web Developer]
+                                </div>
+                                <div className={styles.downwardArrow}>
+                                    <ArrowDownwardIcon className={styles.itemThingy} sx={{fontSize: 120}} onClick={()=> this.handleArrowClick(styles.extraItem)}/>
+                                </div>
                             </div>
-                            <div className={styles.downwardArrow}>
-                        <ArrowDownwardIcon className={styles.itemThingy} sx={{fontSize: 120}} onClick={()=> this.handleArrowClick(styles.extraItem)}/>
-                        </div>
-                        </div>
                             <div className={styles.importantImageHolder}>
                                 <img className={styles.importantImage} 
-                                src={"https://media.licdn.com/dms/image/C5603AQGDpqq29SA6KQ/profile-displayphoto-shrink_800_800/0/1653630642508?e=1688601600&v=beta&t=PSNTDC2ZKBMM2uYzKtZEc_doZd5KqZ1PE4YAGoNkJzw"}/>
-                            </div>
+                                    src={"https://media.licdn.com/dms/image/C5603AQGDpqq29SA6KQ/profile-displayphoto-shrink_800_800/0/1653630642508?e=1688601600&v=beta&t=PSNTDC2ZKBMM2uYzKtZEc_doZd5KqZ1PE4YAGoNkJzw"}/>
+                                </div>
                             <div className={styles.arrowInfoHolder}>
                                 <div className={styles.info}>
                                     I am an up-and-coming web developer 👨‍💻 and data scientist! Thank you for checking out my page 😁
@@ -84,17 +68,18 @@ export default class Root extends React.Component {
                 </div>
                 <div className={styles.extraItem}>
                     <div className={styles.topItems}>
-                    <div className={styles.label}>
-                        <strong>[snapshot]</strong>
-                        <div className={styles.bottomUnderline}>
-                            Who am I?
-                       </div>
+                        <div className={styles.label}>
+                            <strong>
+                                [snapshot]
+                            </strong>
+                            <div className={styles.bottomUnderline}>
+                                Who am I?
+                            </div>
                     </div>
                     <div className={styles.upArrowHolder}>
                         <ArrowUpwardRoundedIcon className={styles.itemThingyUp} sx={{fontSize: 120}} onClick={this.resetScroll} />
                     </div>
                     </div>
-
                     <div className={styles.bio}>
                         My name is Colin FitzGerald.
 
@@ -121,42 +106,42 @@ export default class Root extends React.Component {
                         The inspiration for my website was from one of my friends who is also a current U.C. Berkeley Student. I learned to and took inspiration from his workflow. Here is a link to Ravi’s website.
                     </div>
                     <div className={styles.alignRight}>
-                    <ArrowDownwardIcon className={styles.itemThingy} sx={{fontSize: 120}} onClick={()=> this.handleArrowClick(styles.extraItem1)}/>
+                        <ArrowDownwardIcon className={styles.itemThingy} sx={{fontSize: 120}} onClick={()=> this.handleArrowClick(styles.extraItem1)}/>
                     </div>
-
-
                 </div>
                 <div className={styles.extraItem1}>
                     <div className={styles.topItems}>
-                    <div className={styles.label}>
-                       <strong>[focus]</strong>
+                        <div className={styles.label}>
+                            <strong>
+                                [focus]
+                            </strong>
                        <div className={styles.bottomUnderline}>
-                        Photography
+                            Photography
                        </div>
                     </div>
                     <div className={styles.upArrowHolder}>
                         <ArrowUpwardRoundedIcon className={styles.itemThingyUp} sx={{fontSize: 120}} onClick={()=> this.handleArrowClick(styles.extraItem)}/>
                     </div>
                     </div>
-
                     <div className={styles.imageContainer}>
                         {images.map((image)=> 
-                        <div key={image} className={styles.holder}>
-                        <img className={styles.regularImage}
-                        src={image}/>
-                        </div>)}
+                            <div key={image} className={styles.holder}>
+                                <img className={styles.regularImage}
+                                    src={image}/>
+                            </div>)}
                     </div>
                     <div className={styles.alignRight}>
-                    <ArrowDownwardIcon className={styles.itemThingy} sx={{fontSize: 120}} onClick={()=> this.handleArrowClick(styles.extraItem2)}/>
+                        <ArrowDownwardIcon className={styles.itemThingy} sx={{fontSize: 120}} onClick={()=> this.handleArrowClick(styles.extraItem2)}/>
                     </div>
-
                 </div>
                 <div className={styles.extraItem2}>
                     <div className={styles.topItems}>
-                    <div className={styles.label}>
-                       <strong>[passion]</strong>
+                        <div className={styles.label}>
+                            <strong>
+                                [passion]
+                            </strong>
                        <div className={styles.bottomUnderline}>
-                        Running
+                            Running
                        </div>
                     </div>
                     <div className={styles.upArrowHolder}>
