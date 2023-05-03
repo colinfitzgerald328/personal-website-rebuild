@@ -48,7 +48,10 @@ export default class Root extends React.Component {
                                     [Web Developer]
                                 </div>
                                 <div className={styles.downwardArrow}>
-                                    <ArrowDownwardIcon className={styles.itemThingy} sx={{fontSize: 120}} onClick={()=> this.handleArrowClick(styles.extraItem)}/>
+                                    <ArrowDownwardIcon
+                                        className={styles.itemThingy}
+                                        sx={{fontSize: 120}}
+                                        onClick={()=> this.handleArrowClick(styles.extraItem)}/>
                                 </div>
                             </div>
                             <div className={styles.importantImageHolder}>
