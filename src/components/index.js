@@ -8,35 +8,17 @@ export default class Root extends React.Component {
         super(props) 
         this.state = {scrollheight: 0}
     }
-    handleArrowClick = () => {
-        const element = document.querySelector(`.${styles.extraItem}`);
-        this.setState({ scrollheight: element.offsetTop })
+    
+
+    handleArrowClick(elementName) {
+        const element = document.querySelector(`.${elementName}`);
+        this.setState({ scrollheight: element.offsetTop });
         window.scrollTo({
-            top: element.offsetTop,
-            behavior: "smooth"
+          top: element.offsetTop,
+          behavior: "smooth"
         });
-    }
-
-    handleArrowClick1 = () => {
-        const element = document.querySelector(`.${styles.extraItem1}`);
-        this.setState({ scrollheight: element.offsetTop })
-        window.scrollTo({
-            top: element.offsetTop,
-            behavior: "smooth"
-        });
-    }
-
-    handleArrowClick2 = () => {
-        const element = document.querySelector(`.${styles.extraItem2}`);
-        this.setState({ scrollheight: element.offsetTop })
-        window.scrollTo({
-            top: element.offsetTop,
-            behavior: "smooth"
-        });
-    }
-
-
-
+      }
+      
     resetScroll = () => {
         window.scrollTo({
             top: 0,
@@ -82,7 +64,7 @@ export default class Root extends React.Component {
                                 [Web Developer]
                             </div>
                             <div className={styles.downwardArrow}>
-                        <ArrowDownwardIcon className={styles.itemThingy} sx={{fontSize: 120}} onClick={this.handleArrowClick} />
+                        <ArrowDownwardIcon className={styles.itemThingy} sx={{fontSize: 120}} onClick={()=> this.handleArrowClick(styles.extraItem)}/>
                         </div>
                         </div>
                             <div className={styles.importantImageHolder}>
@@ -139,7 +121,7 @@ export default class Root extends React.Component {
                         The inspiration for my website was from one of my friends who is also a current U.C. Berkeley Student. I learned to and took inspiration from his workflow. Here is a link to Ravi’s website.
                     </div>
                     <div className={styles.alignRight}>
-                    <ArrowDownwardIcon className={styles.itemThingy} sx={{fontSize: 120}} onClick={this.handleArrowClick1} />
+                    <ArrowDownwardIcon className={styles.itemThingy} sx={{fontSize: 120}} onClick={()=> this.handleArrowClick(styles.extraItem1)}/>
                     </div>
 
 
@@ -153,7 +135,7 @@ export default class Root extends React.Component {
                        </div>
                     </div>
                     <div className={styles.upArrowHolder}>
-                        <ArrowUpwardRoundedIcon className={styles.itemThingyUp} sx={{fontSize: 120}} onClick={this.handleArrowClick} />
+                        <ArrowUpwardRoundedIcon className={styles.itemThingyUp} sx={{fontSize: 120}} onClick={()=> this.handleArrowClick(styles.extraItem)}/>
                     </div>
                     </div>
 
@@ -165,7 +147,7 @@ export default class Root extends React.Component {
                         </div>)}
                     </div>
                     <div className={styles.alignRight}>
-                    <ArrowDownwardIcon className={styles.itemThingy} sx={{fontSize: 120}} onClick={this.handleArrowClick2} />
+                    <ArrowDownwardIcon className={styles.itemThingy} sx={{fontSize: 120}} onClick={()=> this.handleArrowClick(styles.extraItem2)}/>
                     </div>
 
                 </div>
@@ -178,7 +160,7 @@ export default class Root extends React.Component {
                        </div>
                     </div>
                     <div className={styles.upArrowHolder}>
-                        <ArrowUpwardRoundedIcon className={styles.itemThingyUp} sx={{fontSize: 120}} onClick={this.resetScroll} />
+                        <ArrowUpwardRoundedIcon className={styles.itemThingyUp} sx={{fontSize: 120}} onClick={()=> this.handleArrowClick(styles.extraItem1)} />
                     </div>
                     </div>
                     <iframe height='454' width='100%' frameborder='0' allowtransparency='true' src='https://www.strava.com/athletes/84239936/latest-rides/cf9212f274739e26c9e9d7af072e33d80326da4a'></iframe>
