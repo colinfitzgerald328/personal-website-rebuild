@@ -2,7 +2,17 @@ import React from "react";
 import styles from "./styles.module.css"
 
 export default class TopItems extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = { daWidth: this.props.thingyOne }
+    }
+    componentDidUpdate(prevProps) {
+        if (prevProps.thingyOne !== this.props.thingyOne) {
+            this.setState({ daWidth: this.props.thingyOne })
+        }
+    }
     render() {
+        console.log(this.state.daWidth)
         return (
             <div className={styles.itemsHolder}>
                 <div className={styles.leftItems}>

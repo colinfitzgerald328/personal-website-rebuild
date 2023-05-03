@@ -5,11 +5,17 @@ import TopItems from "./topItems";
 import styles from "./styles.module.css";
 
 export default class Root extends React.Component {
+    constructor(props) {
+        super(props) 
+            this.state = { thingyOne: window.innerWidth }
+            this.basicFunction = this.basicFunction.bind(this)
+        
+    }
     handleArrowClick(elementName) {
         const element = document.querySelector(`.${elementName}`);
         window.scrollTo({
           top: element.offsetTop,
-          behavior: "smooth"
+          behavior: "smooth", 
         });
       }
       
@@ -19,6 +25,23 @@ export default class Root extends React.Component {
             behavior: "smooth"
         });
     }
+
+
+
+
+    componentDidMount() {
+       window.addEventListener('resize', this.basicFunction)
+    }
+
+    basicFunction() {
+        console.log(window.innerWidth)
+        this.setState({ thisVariable: window.innerWidth })
+    }
+
+
+
+
+
 
     
     render() {
@@ -33,7 +56,7 @@ export default class Root extends React.Component {
         return (
             <div className={styles.main}>
                 <div className={styles.mainBackground}>
-                    <TopItems/>
+                    <TopItems thingyOne={this.state.thingyOne}/>
                     <div className={styles.leftAndRightContainer}>
                         <div className={styles.leftItemsHolder}>
                             <div className={styles.roleArrowContainer}>
