@@ -5,15 +5,8 @@ import TopItems from "./topItems";
 import styles from "./styles.module.css";
 
 export default class Root extends React.Component {
-    constructor(props) {
-        super(props) 
-        this.state = {scrollheight: 0}
-    }
-    
-
     handleArrowClick(elementName) {
         const element = document.querySelector(`.${elementName}`);
-        this.setState({ scrollheight: element.offsetTop });
         window.scrollTo({
           top: element.offsetTop,
           behavior: "smooth"
