@@ -77,7 +77,10 @@ export default class Root extends React.Component {
                             </div>
                     </div>
                     <div className={styles.upArrowHolder}>
-                        <ArrowUpwardRoundedIcon className={styles.itemThingyUp} sx={{fontSize: 120}} onClick={this.resetScroll} />
+                        <ArrowUpwardRoundedIcon
+                            className={styles.itemThingyUp}
+                            sx={{fontSize: 120}}
+                            onClick={this.resetScroll} />
                     </div>
                     </div>
                     <div className={styles.bio}>
@@ -106,7 +109,10 @@ export default class Root extends React.Component {
                         The inspiration for my website was from one of my friends who is also a current U.C. Berkeley Student. I learned to and took inspiration from his workflow. Here is a link to Ravi’s website.
                     </div>
                     <div className={styles.alignRight}>
-                        <ArrowDownwardIcon className={styles.itemThingy} sx={{fontSize: 120}} onClick={()=> this.handleArrowClick(styles.extraItem1)}/>
+                        <ArrowDownwardIcon
+                            className={styles.itemThingy}
+                            sx={{fontSize: 120}}
+                            onClick={()=> this.handleArrowClick(styles.extraItem1)}/>
                     </div>
                 </div>
                 <div className={styles.extraItem1}>
@@ -120,7 +126,10 @@ export default class Root extends React.Component {
                        </div>
                     </div>
                     <div className={styles.upArrowHolder}>
-                        <ArrowUpwardRoundedIcon className={styles.itemThingyUp} sx={{fontSize: 120}} onClick={()=> this.handleArrowClick(styles.extraItem)}/>
+                        <ArrowUpwardRoundedIcon
+                            className={styles.itemThingyUp}
+                            sx={{fontSize: 120}}
+                            onClick={()=> this.handleArrowClick(styles.extraItem)}/>
                     </div>
                     </div>
                     <div className={styles.imageContainer}>
@@ -131,7 +140,10 @@ export default class Root extends React.Component {
                             </div>)}
                     </div>
                     <div className={styles.alignRight}>
-                        <ArrowDownwardIcon className={styles.itemThingy} sx={{fontSize: 120}} onClick={()=> this.handleArrowClick(styles.extraItem2)}/>
+                        <ArrowDownwardIcon
+                            className={styles.itemThingy}
+                            sx={{fontSize: 120}}
+                            onClick={()=> this.handleArrowClick(styles.extraItem2)}/>
                     </div>
                 </div>
                 <div className={styles.extraItem2}>
@@ -145,10 +157,19 @@ export default class Root extends React.Component {
                        </div>
                     </div>
                     <div className={styles.upArrowHolder}>
-                        <ArrowUpwardRoundedIcon className={styles.itemThingyUp} sx={{fontSize: 120}} onClick={()=> this.handleArrowClick(styles.extraItem1)} />
+                        <ArrowUpwardRoundedIcon
+                            className={styles.itemThingyUp}
+                            sx={{fontSize: 120}}
+                            onClick={()=> this.handleArrowClick(styles.extraItem1)} />
                     </div>
                     </div>
-                    <iframe height='454' width='100%' frameborder='0' allowtransparency='true' src='https://www.strava.com/athletes/84239936/latest-rides/cf9212f274739e26c9e9d7af072e33d80326da4a'></iframe>
+                    <iframe
+                        height='454'
+                        width='100%'
+                        frameborder='0'
+                        allowtransparency='true'
+                        src='https://www.strava.com/athletes/84239936/latest-rides/cf9212f274739e26c9e9d7af072e33d80326da4a'>
+                    </iframe>
                 </div>
             </div>
         )
