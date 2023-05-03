@@ -1,0 +1,189 @@
+.main {
+    width: 100vw;
+    height: 100%;
+    overflow: scroll;
+}
+
+.mainBackground {
+    background-color: #E0DFDD;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 90vh;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.itemsHolder {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.leftItems {
+    display: flex;
+}
+
+.item {
+    width: 180px;
+    font-weight: 500;
+    margin-right: 130px;
+}
+
+.lastItem {
+    margin-right: 40px;
+}
+
+.leftAndRightContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.leftItemsHolder {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.role {
+    margin-top: 20px;
+    font-size: 60px;
+    width: 300px;
+    font-weight: 600;
+}
+
+.importantImage {
+    border-radius: 20px;
+    width: 260px;
+}
+
+.importantImageHolder {
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.arrowInfoHolder {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 30px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.info {
+    width: 210px;
+    margin-top: auto;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.rightItems {
+    margin-left: 40px;
+    margin-top: auto;
+    font-size: 60px;
+    width: 400px;
+    margin-bottom: 40px;
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    font-weight: 450;
+}
+
+.extraItem {
+    height: fit-content;
+    background-color: #E0DFDD;
+    margin-top: 40px;
+    border-radius: 30px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.label {
+    font-size: 60px;
+}
+
+.bio {
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.itemThingy:hover {
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+.itemThingyUp:hover {
+    cursor: pointer;
+    border-top: 1px solid black;
+}
+
+
+.topItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imageContainer {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    overflow-x: scroll;
+    height: fit-content;
+}
+
+.holder {
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+
+.regularImage {
+    width: 300px;
+    border-radius: 30px;
+}
+
+.regularImage:last-child {
+    margin-right: None;
+}
+
+.alignRight {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.downwardArrow {
+    display: flex;
+    margin-left: auto;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.roleArrowContainer {
+    display: flex;
+    width: 100%;
+}
+
+.name {
+    font-size: 60px;
+    text-align: right;
+}
+
+.bottomUnderline {
+    margin-bottom: 20px;
+}
+
