@@ -7,7 +7,7 @@ import styles from "./styles.module.css";
 export default class Root extends React.Component {
     constructor(props) {
         super(props) 
-            this.state = { windowWidth: null }
+            this.state = { innnerWidth: null }
             this.basicFunction = this.basicFunction.bind(this)
         
     }
@@ -31,6 +31,7 @@ export default class Root extends React.Component {
 
     componentDidMount() {
        window.addEventListener('resize', this.basicFunction)
+       this.setState({ windowWidth: window.innerWidth })
     }
 
     basicFunction() {
@@ -65,7 +66,7 @@ export default class Root extends React.Component {
                                 <div className={this.state.windowWidth > 1000 ? styles.downwardArrow : styles.downwardArrowMobile}>
                                     <ArrowDownwardIcon
                                         className={this.state.windowWidth > 1000 ? styles.itemThingy : styles.itemThingy}
-                                        sx={this.state.windowWidth > 1000 ? {fontSize: 120} : {fontSize: 60}}
+                                        sx={this.state.windowWidth > 1000 ? {fontSize: 120} : {fontSize: 65}}
                                         onClick={()=> this.handleArrowClick(styles.extraItem)}/>
                                 </div>
                             </div>
