@@ -59,13 +59,13 @@ export default class Root extends React.Component {
                     <div className={styles.leftAndRightContainer}>
                         <div className={styles.leftItemsHolder}>
                             <div className={styles.roleArrowContainer}>
-                                <div className={this.state.windowWidth > 1308 ? styles.role : styles.roleMobile}>
+                                <div className={this.state.windowWidth > 1000 ? styles.role : styles.roleMobile}>
                                     [Web Developer]
                                 </div>
-                                <div className={this.state.windowWidth > 1308 ? styles.downwardArrow : styles.downwardArrowMobile}>
+                                <div className={this.state.windowWidth > 1000 ? styles.downwardArrow : styles.downwardArrowMobile}>
                                     <ArrowDownwardIcon
-                                        className={this.state.windowWidth > 1308 ? styles.itemThingy : styles.itemThingy}
-                                        sx={this.state.windowWidth > 1308 ? {fontSize: 120} : {fontSize: 60}}
+                                        className={this.state.windowWidth > 1000 ? styles.itemThingy : styles.itemThingy}
+                                        sx={this.state.windowWidth > 1000 ? {fontSize: 120} : {fontSize: 60}}
                                         onClick={()=> this.handleArrowClick(styles.extraItem)}/>
                                 </div>
                             </div>
@@ -73,11 +73,11 @@ export default class Root extends React.Component {
                                 <img className={styles.importantImage} 
                                     src={"https://media.licdn.com/dms/image/C5603AQGDpqq29SA6KQ/profile-displayphoto-shrink_800_800/0/1653630642508?e=1688601600&v=beta&t=PSNTDC2ZKBMM2uYzKtZEc_doZd5KqZ1PE4YAGoNkJzw"}/>
                                 </div>
-                            <div className={this.state.windowWidth > 1308 ? styles.arrowInfoHolder : styles.arrowInfoHolderMobile}>
+                            <div className={this.state.windowWidth > 1000 ? styles.arrowInfoHolder : styles.arrowInfoHolderMobile}>
                                 <div className={styles.info}>
                                     I am an up-and-coming web developer 👨‍💻 and data scientist! Thank you for checking out my page 😁
                                 </div>
-                                <div className={this.state.windowWidth > 1308 ? styles.name : styles.smallerName}>
+                                <div className={this.state.windowWidth > 1000 ? styles.name : styles.smallerName}>
                                     COLIN FITZGERALD
                                 </div>
                             </div>
@@ -97,7 +97,7 @@ export default class Root extends React.Component {
                     <div className={styles.upArrowHolder}>
                         <ArrowUpwardRoundedIcon
                             className={styles.itemThingyUp}
-                            sx={{fontSize: 120}}
+                            sx={this.state.windowWidth > 1000 ? {fontSize: 120} : {fontSize: 60}}
                             onClick={this.resetScroll} />
                     </div>
                     </div>
@@ -129,7 +129,7 @@ export default class Root extends React.Component {
                     <div className={styles.alignRight}>
                         <ArrowDownwardIcon
                             className={styles.itemThingy}
-                            sx={{fontSize: 120}}
+                            sx={this.state.windowWidth > 1000 ? {fontSize: 120} : {fontSize: 60}}
                             onClick={()=> this.handleArrowClick(styles.extraItem1)}/>
                     </div>
                 </div>
@@ -146,7 +146,7 @@ export default class Root extends React.Component {
                     <div className={styles.upArrowHolder}>
                         <ArrowUpwardRoundedIcon
                             className={styles.itemThingyUp}
-                            sx={{fontSize: 120}}
+                            sx={this.state.windowWidth > 1000 ? {fontSize: 120} : {fontSize: 60}}
                             onClick={()=> this.handleArrowClick(styles.extraItem)}/>
                     </div>
                     </div>
@@ -160,7 +160,7 @@ export default class Root extends React.Component {
                     <div className={styles.alignRight}>
                         <ArrowDownwardIcon
                             className={styles.itemThingy}
-                            sx={{fontSize: 120}}
+                            sx={this.state.windowWidth > 1000 ? {fontSize: 120} : {fontSize: 60}}
                             onClick={()=> this.handleArrowClick(styles.extraItem2)}/>
                     </div>
                 </div>
@@ -177,7 +177,7 @@ export default class Root extends React.Component {
                     <div className={styles.upArrowHolder}>
                         <ArrowUpwardRoundedIcon
                             className={styles.itemThingyUp}
-                            sx={{fontSize: 120}}
+                            sx={this.state.windowWidth > 1000 ? {fontSize: 120} : {fontSize: 60}}
                             onClick={()=> this.handleArrowClick(styles.extraItem1)} />
                     </div>
                     </div>

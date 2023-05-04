@@ -108,7 +108,8 @@
 
 .info {
     width: 210px;
-    margin-top: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-weight: 500;
     margin-left: 40px;
 }
@@ -159,7 +160,7 @@
 }
 
 .label {
-    font-size: 60px;
+    font-size: 2rem;
 }
 
 .bio {
@@ -237,7 +238,7 @@
 }
 
 .smallerName {
-    font-size: 60px;
+    font-size: 2rem;
     text-align: right;
 }
 
