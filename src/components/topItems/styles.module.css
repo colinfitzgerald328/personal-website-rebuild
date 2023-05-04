@@ -24,12 +24,27 @@
     margin-left: 40px;
 }
 
+.itemsHolderMobile {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
 .leftItems {
     display: flex;
 }
 
 .item {
     width: 180px;
+    font-weight: 500;
+    margin-right: 130px;
+}
+
+.itemMobile {
+    width: 280px;
+    margin-top: 10px;
     font-weight: 500;
     margin-right: 130px;
 }

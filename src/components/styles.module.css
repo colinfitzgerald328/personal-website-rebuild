@@ -1,7 +1,8 @@
 .main {
     width: 100vw;
     height: 100%;
-    overflow: scroll;
+    overflow-x: disable;
+    overflow-y: scroll;
 }
 
 .mainBackground {
@@ -9,7 +10,19 @@
     display: flex;
     flex-direction: column;
     width: 90vw;
-    height: 90vh;
+    height: fit-content;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.mainBackgroundMobile {
+    background-color: #E0DFDD;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: fit-content;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -61,6 +74,14 @@
     font-weight: 600;
 }
 
+.roleMobile {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    width: 100px;
+    font-weight: 600;
+}
+
 .importantImage {
     border-radius: 20px;
     width: 260px;
@@ -80,6 +101,9 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+}
+
+.arrowInfoHolderMobile {
 }
 
 .info {
@@ -195,12 +219,24 @@
     justify-content: flex-end;
 }
 
+.downwardArrowMobile {
+    display: flex;
+    margin-left: auto;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
 .roleArrowContainer {
     display: flex;
     width: 100%;
 }
 
 .name {
+    font-size: 60px;
+    text-align: right;
+}
+
+.smallerName {
     font-size: 60px;
     text-align: right;
 }

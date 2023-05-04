@@ -2,31 +2,22 @@ import React from "react";
 import styles from "./styles.module.css"
 
 export default class TopItems extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = { daWidth: this.props.thingyOne }
-    }
-    componentDidUpdate(prevProps) {
-        if (prevProps.thingyOne !== this.props.thingyOne) {
-            this.setState({ daWidth: this.props.thingyOne })
-        }
-    }
     render() {
-        console.log(this.state.daWidth)
+        console.log(this.props.windowWidth)
         return (
-            <div className={styles.itemsHolder}>
-                <div className={styles.leftItems}>
-                    <div className={styles.item}>
+            <div className={this.props.windowWidth > 1308 ? styles.itemsHolder : styles.itemsHolderMobile}>
+                <div className={this.props.windowWidth > 1308 ? styles.leftItems : styles.leftItemsHoldeMobile}>
+                    <div className={this.props.windowWidth > 1308 ? styles.item : styles.itemMobile}>
                         Colin FitzGerald
                     </div>
-                    <div className={styles.item}>
+                    <div className={this.props.windowWidth > 1308 ? styles.item : styles.itemMobile}>
                         Currently data engineer at RoBhat Labs 
                     </div>
-                    <div className={styles.item}>
+                    <div className={this.props.windowWidth > 1308 ? styles.item : styles.itemMobile}>
                         Based in Berkeley, California
                     </div>
                 </div>
-                <div className={styles.lastItem}>
+                <div className={this.props.windowWidth > 1308 ? styles.item : styles.itemMobile}>
                     Work, About, Contact 
                 </div>
              </div>
