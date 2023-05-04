@@ -87,7 +87,7 @@ export default class Root extends React.Component {
                 </div>
                 <div className={styles.extraItem}>
                     <div className={styles.topItems}>
-                        <div className={styles.label}>
+                    <div className={this.state.windowWidth > 1000 ? styles.label : styles.smallerLabel}>
                             <strong>
                                 [snapshot]
                             </strong>
@@ -136,7 +136,7 @@ export default class Root extends React.Component {
                 </div>
                 <div className={styles.extraItem1}>
                     <div className={styles.topItems}>
-                        <div className={styles.label}>
+                    <div className={this.state.windowWidth > 1000 ? styles.label : styles.smallerLabel}>
                             <strong>
                                 [focus]
                             </strong>
@@ -167,7 +167,7 @@ export default class Root extends React.Component {
                 </div>
                 <div className={styles.extraItem2}>
                     <div className={styles.topItems}>
-                        <div className={styles.label}>
+                        <div className={this.state.windowWidth > 1000 ? styles.label : styles.smallerLabel}>
                             <strong>
                                 [passion]
                             </strong>
