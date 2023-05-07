@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Inter+Tight:wght@300&family=Roboto+Slab&display=swap');
-
 .main {
     width: 100vw;
     height: 100%;
     overflow-x: disable;
     overflow-y: scroll;
-    font-family: 'Roboto Slab', serif;
 }
 
 .mainBackground {
