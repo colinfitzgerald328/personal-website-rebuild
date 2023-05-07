@@ -219,6 +219,16 @@
     padding-right: 50px;
 }
 
+.blurbNoPadding {
+    color: #282827;
+    border-radius: 15px;
+    height: 100%;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
 .itemThingy:hover {
     cursor: pointer;
     border-bottom: 1px solid black;

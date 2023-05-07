@@ -104,7 +104,7 @@ export default class Root extends React.Component {
                     </div>
                     <div className={styles.bio}>
                         <div className={styles.containerHolder}>
-                        <div className={styles.blurb}>
+                        <div className={this.state.windowWidth > 1000 ? styles.blurb : styles.blurbNoPadding}>
                             My name is Colin FitzGerald and my story begins with a sport I discovered at the age of 7.
 
 
