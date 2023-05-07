@@ -103,29 +103,61 @@ export default class Root extends React.Component {
                     </div>
                     </div>
                     <div className={styles.bio}>
-                        My name is Colin FitzGerald.
+                        <div className={styles.containerHolder}>
+                        <div className={styles.blurb}>
+                            My name is Colin FitzGerald and my story begins with a sport I discovered at the age of 7.
 
-                        My story started with running. Ever since I was a little kid, I loved to run. I brought intense passion and dedication to the sport I loved so dearly, and I was lucky enough to have it translate into acceptance into virtually any university of my choice.
 
-                        jpeg
+                        <br></br>
+                        <br></br>
+                        
+                        Between persistence, consistent dedication and admittedly, genetic talent, my high school running career translated
+                        
+                        into offers from several world class institutions. 
+                        
+                        I chose to attend the University of California, Berkeley, where I competed as a track athlete.  
+                        
 
-                        I chose to attend the University of California, Berkeley, where I am currently a student-athlete.
+                        <br></br>
+                        <br></br>
 
-                        My major is Economics while my minor is in Data Science.
+                        Academically, I majored in economics and minored in data science. 
 
-                        During quarantine, I decided to learn to code since I didn’t have any prior experience.
+                        During the pandemic, I decided to learn to code since I didn’t have any prior experience; it was a challenge I had wanted to tackle for many years. 
 
-                        I was awful at first. I struggled and couldn’t grasp even the most basic concepts. However, I was persistent and patient with myself.
+                        <br></br>
+                        <br></br>
 
-                        Slowly, I am becoming more confident in my ability to code. I find it interesting; to me, it’s one huge puzzle.
+                        Quite frankly, I was awful at first. I struggled and couldn’t grasp even the most basic concepts.
+                        
+                        However, I was persistent and patient with myself.
 
                         I started small with simple Python projects and dabbled a little bit in R.
 
-                        As I have continued through the years, I find myself enjoying coding more and more. One day, I hope to contribute to projects that can change the world. Until then, I’m working hard to learn as much as I can.
+                        Slowly, I became more confident in my ability to master new coding languages.
 
-                        My time in coding is split between Website projects and Data Science.
+                        <br></br>
+                        <br></br>
 
-                        The inspiration for my website was from one of my friends who is also a current U.C. Berkeley Student. I learned to and took inspiration from his workflow. Here is a link to Ravi’s website.
+                        I found that data science and web development projects interested me the most. 
+
+                        As I have continued through the years, I find myself enjoying coding more and more. I know now that the despair I felt when seeing an error is an opportunity to better understand programming.
+
+                        <br></br>
+                        <br></br>
+                        
+                        The first iteration of my personal website was built through cloning a github pages website and modifying it to my liking. 
+
+                        This iteration was built from scratch using Next.js, the language I currently use at RoBhat Labs. 
+
+                        Thanks for reading this small blurb about me and continue on to learn more 😊
+                        </div>
+                        <div className={styles.imageHolder}>
+                            <img className={styles.image} src={"https://images.unsplash.com/photo-1668495238352-cdff39bc763f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80"}/>
+                            <img className={styles.image1} src={"/running_image.jpg"}/>
+                        </div>
+                        </div>
+                        
                     </div>
                     <div className={styles.alignRight}>
                         <ArrowDownwardIcon
