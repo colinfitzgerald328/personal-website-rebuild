@@ -18,7 +18,18 @@ export default class TopItems extends React.Component {
                     </div>
                 </div>
                 <div className={this.props.windowWidth > 1308 ? styles.item : styles.itemMobile}>
-                    Work, About, Contact 
+                    <div className={styles.imageHolder}>
+                        <img onClick={()=> window.open("https://www.instagram.com/colinfitzgerald328/")} className={styles.iconImage} src={"/instagram.png"}>
+                        </img>
+                    </div>
+                    <div className={styles.imageHolder}>
+                        <img onClick={()=> window.open("https://www.github.com/colinfitzgerald328/")} className={styles.iconImage} src={"/github.png"}>
+                        </img>
+                    </div>
+                    <div className={styles.imageHolder}>
+                        <img onClick={()=> window.open("https://www.strava.com/athletes/84239936")} className={styles.iconImage} src={"/strava.png"}>
+                        </img>
+                    </div>
                 </div>
              </div>
         )

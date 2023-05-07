@@ -224,3 +224,27 @@
     margin-bottom: 20px;
 }
 
+.iconImage {
+    height: 32px;
+}
+
+.imageHolder {
+    display: inline-block;
+    color: #9AACAD;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.imageHolder::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #9AACAD;
+    transition: width .3s;
+}
+
+.imageHolder:hover::after {
+    width: 100%;
+}
+
