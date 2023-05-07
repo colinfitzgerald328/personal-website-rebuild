@@ -178,6 +178,16 @@
     padding: 50px;
 }
 
+.containerHolderMobile {
+    display: flex;
+    overflow: scroll;
+    height: 100%;
+    background-color: #2F96F6;
+    color: #0C234D;
+    border-radius: 20px;
+    padding: 20px; 
+}
+
 .imageHolder {
     display: flex;
     justify-content: center;
@@ -223,10 +233,6 @@
     color: #282827;
     border-radius: 15px;
     height: 100%;
-    margin-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
 }
 
 .itemThingy:hover {
