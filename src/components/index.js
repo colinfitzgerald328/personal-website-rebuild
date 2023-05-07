@@ -152,10 +152,13 @@ export default class Root extends React.Component {
 
                         Thanks for reading this small blurb about me and continue on to learn more 😊
                         </div>
+                        {
+                        this.state.windowWidth > 1300 && 
                         <div className={styles.imageHolder}>
                             <img className={styles.image} src={"https://images.unsplash.com/photo-1668495238352-cdff39bc763f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80"}/>
                             <img className={styles.image1} src={"/running_image.jpg"}/>
                         </div>
+                        }
                         </div>
                         
                     </div>

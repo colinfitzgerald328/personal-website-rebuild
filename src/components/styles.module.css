@@ -172,9 +172,9 @@
 
 .containerHolder {
     display: flex;
-    width: 1000px;
     overflow: scroll;
     height: 100%;
+    width: 100%;
     background-color: #2F96F6;
     color: #0C234D;
     border-radius: 20px;
@@ -209,7 +209,6 @@
     line-height: 25px;
     width: 90%; 
     height: 100%;
-    overflow:scroll;
 }
 
 .blurb {
