@@ -3,6 +3,7 @@
     height: 100%;
     overflow-x: disable;
     overflow-y: scroll;
+    font-family: 'Roboto Slab', serif;
 }
 
 .mainBackground {
@@ -171,10 +172,10 @@
     display: flex;
     overflow: scroll;
     height: 100%;
-    width: 100%;
     background-color: #2F96F6;
     color: #0C234D;
     border-radius: 20px;
+    padding: 50px;
 }
 
 .imageHolder {
@@ -210,12 +211,12 @@
 
 .blurb {
     color: #282827;
-    padding: 10px;
     border-radius: 15px;
-    width: 500px;
     height: 100%;
     margin-left: 10px;
-    padding: 50px
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
 }
 
 .itemThingy:hover {
