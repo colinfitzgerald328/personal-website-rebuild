@@ -16,6 +16,9 @@ export default class TopItems extends React.Component {
                     <div className={this.props.windowWidth > 1308 ? styles.item : styles.itemMobile}>
                         Based in Berkeley, California
                     </div>
+                    <div className={this.props.windowWidth > 1308 ? styles.largerItem : styles.itemMobile}>
+                        Blog
+                    </div>
                 </div>
                 <div className={this.props.windowWidth > 1308 ? styles.item : styles.itemMobile}>
                     <div className={styles.imageHolder}>

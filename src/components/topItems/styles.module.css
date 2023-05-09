@@ -42,8 +42,13 @@
     margin-right: 130px;
 }
 
+.largerItem {
+    font-size: 20px;
+    width: fit-content;
+}
+
 .itemMobile {
-    width: 280px;
+    width: 200px;
     margin-top: 10px;
     font-weight: 500;
     margin-right: 130px;
@@ -230,9 +235,9 @@
 
 .imageHolder {
     display: inline-block;
-    color: #9AACAD;
     text-decoration: none;
     cursor: pointer;
+    width: fit-content;
 }
 
 .imageHolder::after {
